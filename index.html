@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <form action="/converter" method="POST">
+        <label for="value">Valor:</label>
+        <input type="number" id="value" name="value" required>
+        <br><br>
+
+        <label for="coin_origin">Moeda de origem (ex: USD | BRL | EUR ):</label>
+        <input type="text" id="coin_origin" name="coin_origin" required>
+        <br><br>
+
+        <label for="coin_destination">Moeda de destino (ex: USD | BRL | EUR ):</label>
+        <input type="text" id="coin_destination" name="coin_destination" required>
+        <br><br>
+
+        <button type="submit">Converter</button>
+    </form>
+</body>
+</html>
